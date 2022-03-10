@@ -2,7 +2,6 @@
 
 /**
  * main - write to stdout
-
  * Return: Always 0 which indicates success
  */
 
