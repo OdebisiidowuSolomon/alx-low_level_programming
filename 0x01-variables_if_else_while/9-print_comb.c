@@ -1,26 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Print single digit numbers in the formart
- *
- * Description: Sepaeated by commas
- * Return: Always(0) Success
- */
+ *  * main -  program that prints all possible combinations of single-digit
+ * Return: 0
+ **/
 
 int main(void)
 {
-	int i;
+int n;
 
-	for (i = 48; i < 58; i++)
-	{
-		putchar(i);
-	}
-	if (i != 57)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	putchar('\n');
-
-	return (0);
+for (n = 48; n <= 57; n++)
+{
+putchar(n);
+if (n > 56)
+continue;
+putchar(44);
+putchar(32);
+}
+putchar('\n');
+return (0);
 }

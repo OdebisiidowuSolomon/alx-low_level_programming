@@ -1,21 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints out the alphabet in lowercase except for 'qe'
+ *  * main - prints the alphabet in lowercase, followed by a new line.
  *
- * Return (0)
  */
 
 int main(void)
 {
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-
-	if (c != 'e' && c != 'q')
-		putchar(c);
-
-	putchar('\n');
-
-	return (0);
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+if (ch == 'q' || ch == 'e')
+continue;
+putchar(ch);
+}
+putchar('\n');
+return (0);
 }
